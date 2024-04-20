@@ -1,0 +1,232 @@
+/* Global styles */
+body {
+    background-color: #edfced;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+/* Logo styles */
+.logo1 {
+    text-align: center; 
+}
+
+.logo1 img {
+    width: 300px; 
+    height: auto; 
+    padding: 10px; 
+    display: block; 
+    margin: 0 auto; 
+}
+
+/* Navigation styles */
+nav {
+    text-align: center;
+    background-color: #223b25; 
+    margin-top: 10px;
+    border-radius: 20px;
+    padding:.5px;
+}
+
+
+nav ul li  {
+    display:inline;
+    margin-right: 20px;
+    font-size:1.4rem;
+}
+
+nav  ul li a {
+    color:white;
+    text-decoration:none;
+}
+
+nav ul li a:hover {
+    color: red; 
+}
+
+/*Offer section styles */
+.discount img {
+    width: 100%;
+    height: 270px;
+    border-radius: 30px;
+    box-sizing:border-box;
+    margin-top: 40px;
+}
+    
+.text-overlay {
+    position: absolute;
+    top: 53%;
+    margin: 10px;
+    color: black;
+    padding-left:  100px;
+}
+    
+.text-overlay h1, h2, h3 {
+    display: inline;
+} 
+    
+/* Glitter animation styles */
+.a {
+    color: transparent;
+    background-image: radial-gradient(#df0d18, #840ed2);
+    background-clip: text;
+    animation: glittering 10s ease-in-out infinite;
+}
+
+.b {
+    color: transparent;
+    background-image: radial-gradient(#fc0cd8, #10d2f4);
+    background-clip: text;
+    animation: glittering 10s ease-in-out infinite;
+}
+
+.d {
+    color: transparent;
+    background-image: radial-gradient(#0cfc14, #c3f50f);
+    background-clip: text;
+    animation: glittering 7s ease-in-out infinite;
+}
+
+.d {
+    animation: fade 8s ease-in-out infinite;
+}
+
+.e {
+    color: transparent;
+    background-image: radial-gradient(#fcf40c, #f50f13);
+    background-clip: text;
+    animation: glittering 20s ease-in-out infinite;
+}
+
+/* Keyframe animations */
+@keyframes glittering {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+
+/* Product section styles */
+.product {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.box {
+    background-color: #f1e8bc;
+    margin: 10px;
+    padding: 10px;
+    width: 270px;
+    height: auto; 
+    overflow: hidden;
+    position: relative; 
+    border-radius: 10px;
+}
+
+.box img {
+    width: 100%; 
+    height: 200px; 
+    margin-bottom: 10px; 
+}
+
+.box:hover img {
+    transform: scale(1.1);
+}
+
+.box #one {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(241, 247, 244);
+    padding: 5px;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.box:hover #one {
+    opacity: 1;
+    color: rgb(244, 46, 6);
+}
+
+/* Footer styles */
+footer {
+    background-color: #dbfdc7;
+    color: #dc9898;
+    text-align: center;
+    padding: 20px;
+}
+
+
+.logo img {
+    width: 100px;
+    height: auto;
+}
+
+
+
+
+
+/* Media Queries for responsiveness */
+@media only screen and (max-width: 768px) {
+    body {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+    
+    .logo1 img {
+        width: 200px;
+    }
+
+    .nav ul li {
+        margin-right: 10px;
+    }
+
+    .text-overlay  {
+        top: 35%; 
+        padding-left: 100px;
+        margin: 30px;     
+        padding: 5px;
+    }
+
+    .text-overlay h1{font-size:1.7rem}
+    .text-overlay h2{font-size:1.4rem}
+   
+    .box img {
+        height: 200px;
+    }
+
+    .book-table img {
+        width: 100%;
+        height: 200px;
+    }
+}
